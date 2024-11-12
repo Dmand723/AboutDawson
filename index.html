@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ThingsAboutDawson</title>
+  </head>
+  <body>
+    <main>
+      <h1>AboutDawson</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <p>
+          Everyone loves
+          <a
+            href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"
+            >cute cats</a
+          >
+          online!
+        </p>
+        <p>
+          See more
+          <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
+          in our gallery.
+        </p>
+        <a href="https://freecatphotoapp.com"
+          ><img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="A cute orange cat lying on its back."
+        /></a>
+      </section>
+      <section>
+        <h2>Things I Love and Hate</h2>
+        <h3>Things Dawson loves:</h3>
+        <ul>
+          <li>Dirt Bikes</li>
+          <li>Video Games</li>
+          <li>Shrimp</li>
+        </ul>
+        <figure>
+          <img
+            src="https://christieathome.com/wp-content/uploads/2022/05/thai-garlic-fried-shrimp3-500x375.jpg"
+            alt="Some delicios looking Shrimp."
+          />
+          <figcaption>Dawson <em>loves</em> Shrimp.</figcaption>
+        </figure>
+        <h3>3 things Dawson dislikes:</h3>
+        <ol>
+          <li>Weird Smells</li>
+          <li>Peanut Butter</li>
+          <li>Cilantro</li>
+        </ol>
+        <figure>
+          <img
+            src="https://www.highmowingseeds.com/media/catalog/product/cache/95cbc1bb565f689da055dd93b41e1c28/5/0/5051.jpg"
+            alt="Cilantro."
+          />
+          <figcaption>Dawson <strong>hates</strong> Cilantro.</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Tell me about you</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Do you like video games?</legend>
+            <label
+              ><input id="yes" type="radio" name="yes-no" value="yes" checked />
+              Yes</label
+            >
+            <label
+              ><input id="no" type="radio" name="yes-no" value="no" /> No</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>Whats your Fav Season?</legend>
+            <input
+              id="Summer"
+              type="checkbox"
+              name="season"
+              value="Summer"
+              checked
+            />
+            <label for="summer">Summer</label>
+            <input id="fall" type="checkbox" name="season" value="fall" />
+            <label for="fall">Fall</label>
+            <input id="winter" type="checkbox" name="season" value="winter" />
+            <label for="winter">Winter</label>
+            <input id="spring" type="checkbox" name="season" value="spring" />
+            <label for="spring">Spring</label>
+          </fieldset>
+          <input
+            type="text"
+            name="favthingURL"
+            placeholder="Fav thing URL"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
