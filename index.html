@@ -1,37 +1,20 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>ThingsAboutDawson</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>AboutDawson</title>
   </head>
   <body>
     <main>
-      <h1>AboutDawson</h1>
-      <section>
-        <h2>Cat Photos</h2>
-        <p>
-          Everyone loves
-          <a
-            href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"
-            >cute cats</a
-          >
-          online!
-        </p>
-        <p>
-          See more
-          <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
-          in our gallery.
-        </p>
-        <a href="https://freecatphotoapp.com"
-          ><img
-            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-            alt="A cute orange cat lying on its back."
-        /></a>
-      </section>
+      <header>
+        <h1>About Dawson</h1>
+      </header>
+
       <section>
         <h2>Things I Love and Hate</h2>
-        <h3>Things Dawson loves:</h3>
+        <h3 class="loves">Things Dawson loves:</h3>
         <ul>
           <li>Dirt Bikes</li>
           <li>Video Games</li>
@@ -58,9 +41,9 @@
           <figcaption>Dawson <strong>hates</strong> Cilantro.</figcaption>
         </figure>
       </section>
-      <section>
+      <section class="form">
         <h2>Tell me about you</h2>
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <form>
           <fieldset>
             <legend>Do you like video games?</legend>
             <label
@@ -72,7 +55,7 @@
             >
           </fieldset>
           <fieldset>
-            <legend>Whats your Fav Season?</legend>
+            <legend>Whats your Fav Season(s)?</legend>
             <input
               id="Summer"
               type="checkbox"
@@ -88,10 +71,11 @@
             <input id="spring" type="checkbox" name="season" value="spring" />
             <label for="spring">Spring</label>
           </fieldset>
+          <br />
           <input
             type="text"
             name="favthingURL"
-            placeholder="Fav thing URL"
+            placeholder="Fav thing image URL"
             required
           />
           <button type="submit">Submit</button>
@@ -99,10 +83,17 @@
       </section>
     </main>
     <footer>
-      <p>
-        No Copyright -
-        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-      </p>
+      © <span id="year"></span> | Dawson Simmons | Utah |
+      <a
+        id="ttechlink"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://tooeletech.edu/"
+        >Tooele Technical Collage</a
+      >
+      <br />
+
+      Last updated: <span id="date"></span>
     </footer>
   </body>
 </html>
